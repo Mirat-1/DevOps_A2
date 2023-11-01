@@ -13,3 +13,6 @@ title = match_results.group()
 title = re.sub("<.*?>", "", title) # Remove HTML tags
 
 print(title)
+sourceFile=open('scrapping.txt','w')
+print(title,file=sourceFile)
+sourceFile.close()
